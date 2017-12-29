@@ -43,14 +43,14 @@ public class Controller_dobavlemie_v_knizku implements Sklad {
         Komu.textProperty().addListener((observable, oldValue, newValue) -> {
             if (!p1.matcher(newValue).matches()) Komu.setText(oldValue);
         });
-        //Ограничения ввода.
+       
     }
 
     @FXML
     public void add_modal() {
         LinkedHashSet<Kinzka> hs = new LinkedHashSet<>();
 
-        String f = OtKogo.getText();//Переменная f принимает текст из OtKogo
+        String f = OtKogo.getText();
         String t = Komu.getText();
         String a1 = Den.getText();
         String b1 = Mesyac.getText();
@@ -65,7 +65,7 @@ public class Controller_dobavlemie_v_knizku implements Sklad {
             alert.showAndWait();
 
         }else {
-            int b = Integer.parseInt(Mesyac.getText());//Параметр B превращается в инт
+            int b = Integer.parseInt(Mesyac.getText());
             int c = Integer.parseInt(God.getText());
             int h = Integer.parseInt(Chasi.getText());
             int m = Integer.parseInt(Minuti.getText());
@@ -111,7 +111,7 @@ public class Controller_dobavlemie_v_knizku implements Sklad {
             }
             else {
                 listknizka.add(new Kinzka(f, t, a, b, c, h, m));
-                hs.addAll(listknizka); //hs это хэш сет (тоже коллекция , но хранящая уникальные элементы).
+                hs.addAll(listknizka); 
                 listknizka.clear();
                 listknizka.addAll(hs);
             }
