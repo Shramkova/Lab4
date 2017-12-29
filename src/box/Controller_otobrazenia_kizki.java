@@ -10,13 +10,13 @@ import javafx.util.Callback;
 
 public class Controller_otobrazenia_kizki implements Sklad{
     @FXML
-    private TableView<Kinzka> table;//Это вся табличка , куда заполняются листы. ЖУРНАЛ
+    private TableView<Kinzka> table;
     @FXML
-    TableColumn<Kinzka, String> OtKogo;//Это колонка ОТ КОГО , тип стринг.
+    TableColumn<Kinzka, String> OtKogo;
     @FXML
     TableColumn<Kinzka, String> Komu;
     @FXML
-    TableColumn<Kinzka, Integer> Den;//Это колонка для числовых данных типа ИНТ.
+    TableColumn<Kinzka, Integer> Den;
     @FXML
     TableColumn<Kinzka, Integer> Mes;
     @FXML
@@ -29,7 +29,7 @@ public class Controller_otobrazenia_kizki implements Sklad{
     @FXML
     public void initialize() {
 
-        table.itemsProperty().setValue(listknizka);//Тут я говорю , что табличка принимает коллекцию для журнала.
+        table.itemsProperty().setValue(listknizka);
         OtKogo.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Kinzka, String>, ObservableValue<String>>() {
             @Override
             public ObservableValue<String> call(TableColumn.CellDataFeatures<Kinzka, String> param) {
