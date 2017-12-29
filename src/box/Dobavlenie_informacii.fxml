@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="278.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="box.Controller_dobavlemie_v_knizku">
+   <children>
+      <TextField fx:id="OtKogo" layoutX="14.0" layoutY="14.0" />
+      <TextField fx:id="Komu" layoutX="14.0" layoutY="39.0" />
+      <TextField fx:id="Den" layoutX="14.0" layoutY="94.0" />
+      <TextField fx:id="Mesyac" layoutX="14.0" layoutY="119.0" />
+      <TextField fx:id="God" layoutX="14.0" layoutY="142.0" />
+      <TextField fx:id="Minuti" layoutX="14.0" layoutY="224.0" />
+      <TextField fx:id="Chasi" layoutX="14.0" layoutY="199.0" />
+      <Text layoutX="172.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Кто звонит" />
+      <Text layoutX="176.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кому звонят" />
+      <Text layoutX="177.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="День" />
+      <Text layoutX="176.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Месяц" />
+      <Text layoutX="175.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Год" />
+      <Text layoutX="76.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата" />
+      <Text layoutX="71.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Время" />
+      <Text layoutX="176.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Часы" />
+      <Text layoutX="176.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Минуты" />
+      <Button layoutX="65.0" layoutY="265.0" mnemonicParsing="false" onAction="#add_modal" prefHeight="25.0" prefWidth="149.0" text="Добавить" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="box.Controller_vivoda_poiska_imeni">
+   <children>
+      <TableView fx:id="table" onSort="#initialize" prefHeight="597.0" prefWidth="370.0">
+         <columns>
+            <TableColumn fx:id="OtKogo" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="89.0" text="Кто звонит" />
+            <TableColumn fx:id="Komu" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="92.0" text="Кому звонят" />
+            <TableColumn fx:id="at2" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="107.0" text="Дата">
+               <columns>
+                  <TableColumn fx:id="Den" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="30.0" text="Д" />
+                  <TableColumn fx:id="Mes" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="28.0" text="М" />
+                  <TableColumn fx:id="God" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="50.0" text="Г" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="ht2" minWidth="0.0" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="110.0" text="Время">
+               <columns>
+                  <TableColumn fx:id="Hour" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="36.0" text="Ч" />
+                  <TableColumn fx:id="Min" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="45.0" text="М" />
+               </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
